@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\Converters.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Contracts\Converters.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Archive.Contracts\Archive.Contracts.csproj" />
+    <ProjectReference Include="..\Archive.Repositories\Archive.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

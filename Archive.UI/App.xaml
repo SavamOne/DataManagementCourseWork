@@ -1,0 +1,21 @@
+﻿<Application x:Class="Archive.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Converters/Converters.xaml"/>
+                <ResourceDictionary Source="Views/Login.xaml"/>
+                <ResourceDictionary Source="Views/Main.xaml"/>
+                <ResourceDictionary Source="Views/DocumentsDataGrid.xaml"/>
+                <ResourceDictionary Source="Views/FindDocumentByNameTab.xaml"/>
+                <ResourceDictionary Source="Views/FindDocumentByThemeTab.xaml"/>
+                <ResourceDictionary Source="Views/AddDocumentTab.xaml"/>
+                <ResourceDictionary Source="Views/MostCountAndSearchableDocument.xaml"/>
+                <ResourceDictionary Source="Views/FindWorker.xaml"/>
+                <ResourceDictionary Source="Views/DeleteDocument.xaml"/>
+                <ResourceDictionary Source="Views/ChangeDepartmentNumber.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
